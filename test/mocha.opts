@@ -1,0 +1,2 @@
+--reporter spec
+--require coffee-script/register

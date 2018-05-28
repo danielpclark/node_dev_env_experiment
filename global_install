@@ -1,0 +1,2 @@
+yarn global add mocha
+yarn global add coffee-script
