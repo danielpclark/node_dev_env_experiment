@@ -2,7 +2,7 @@ require './testHelper'
 require '../src/coinCounter'
 
 describe 'Makes change', ->
-  it 'should produce denominations of change', ->
+  it 'should produce default denominations of change', ->
     expect(
       count_change('831 pennies')
     ) . to . equal '

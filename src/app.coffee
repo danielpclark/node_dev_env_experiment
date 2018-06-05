@@ -1,0 +1,1 @@
+global.MathJS = require('mathjs')

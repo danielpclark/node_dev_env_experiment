@@ -1,6 +1,7 @@
 #!/usr/bin/fish
 
 function coffee_watch
+  clear
   inotifywait --quiet --recursive --monitor --format "Changed: %w%f" \
     --event close_write --exclude '(\.sw|~|[[:digit:]]+|node_modules)' . | bin/test;
   coffee_watch

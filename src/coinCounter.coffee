@@ -1,29 +1,23 @@
-global.MathJS = require('mathjs')
+require './app'
 
 MathJS.createUnit({
-  'penny': {
-    aliases: ['pennies'],
-  },
-  'nickel': {
-    definition: '5 pennies',
+  'penny':
+    aliases: ['pennies']
+  'nickel':
+    definition: '5 pennies'
     aliases: ['nickels']
-  },
-  'dime': {
-    definition: '2 nickels',
+  'dime':
+    definition: '2 nickels'
     aliases: ['dimes']
-  },
-  'quarter': {
-    definition: '5 nickels',
+  'quarter':
+    definition: '5 nickels'
     aliases: ['quarters']
-  },
-  'halfdollar': {
-    definition: '2 quarters',
+  'halfdollar':
+    definition: '2 quarters'
     aliases: ['halfdollars']
-  },
-  'dollar': {
-    definition: '4 quarters',
+  'dollar':
+    definition: '4 quarters'
     aliases: ['dollars']
-  }
 })
 
 defaultDenoms = -> [
